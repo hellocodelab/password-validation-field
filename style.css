@@ -1,0 +1,98 @@
+:root {
+  --white: #f2f6fc;
+  --light-blue:#d3e0f5;
+  --baby-blue :#7aa8ea;
+  --blue: #5188f1;
+  --black: #313640;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--light-blue);
+  color: var(--black);
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: min(90%, 250px);
+}
+
+label {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#password-field {
+  position: relative;
+  height: 50px;
+  font-size: 17px;
+  font-weight: 400;
+  padding-left: 25px;
+  padding-right: 52px;
+  letter-spacing: 3px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  transition: .2s;
+}
+
+.icon i {
+  color: var(--baby-blue);
+  line-height: 45px;
+  font-size: 25px;
+  position: absolute;
+  right: 22px;
+  top: 45px;
+}
+
+.valid-checks {
+  margin: 20px 0;
+  padding: 20px 25px;
+  background-color: var(--blue);
+  border-radius: 25px;
+  transition: .2s ease;
+  opacity: 1;
+}
+
+.valid-checks ul {
+  list-style-type: none;
+}
+
+.valid-checks li {
+  position: relative;
+  font-size: 15px;
+  font-weight: 300;
+  margin: 8px 0;
+  color: var(--baby-blue);
+  transition: .2s ease;
+}
+.valid-checks li i{
+  font-size: 20px;
+  margin-right: 8px;
+}
+.valid-checks li.checked {
+  color: var(--white);
+  font-weight: 500;
+}
+
+.hide {
+  opacity: 0;
+  visibility:hidden;
+}
+
+
+
